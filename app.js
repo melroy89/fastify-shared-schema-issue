@@ -8,7 +8,11 @@ const options = {}
 
 module.exports = async function (fastify, opts) {
   // Register Swagger and Swagger UI
-  fastify.register(require('@fastify/swagger'))
+  await fastify.register(require('@fastify/swagger'), {
+    openapi: {
+    }
+  })
+
   fastify.register(require('@fastify/swagger-ui'), {
     routePrefix: '/docs'
   })
