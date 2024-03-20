@@ -1,6 +1,6 @@
 # Reproducible git repo for Fastify shared schema issue
 
-Default Fastify Swagger is using OpenAPI v2, here is the bug present. When using OpenAPI v3 spec, the error below does no longer appears.
+By default Fastify Swagger is using OpenAPI v2 spec, **here** the bug **is present**. When using OpenAPI v3 spec, the error below does no longer appears.
 
 See code: `app.js` & `routes/root.js`
 
